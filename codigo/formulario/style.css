@@ -1,0 +1,82 @@
+@import url('https://fonte.googleapis.com/css2?family=Quicksand:wgt@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+   
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+    .container button{
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+       
+    }
+    label{
+        font-weight: 700;
+        font-size: 26px;
+        margin-bottom: 20px;
+    } 
+    .input-file-upload{
+        display: flex;
+        flex-direction: column;
+    }
+    .upload-btn{
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+    }
+    .btn{
+        width: 500px;
+        border: 2px d;
+    }
+
+    .btn{
+        width: 150px;
+        border: 2px dashed rgb(163, 0, 0, 0.719) !important;
+        text-align: center;
+        padding: 19px, 40px;
+
+    }
+    .upload-btn input[type=file] {
+        font-size: 10px;
+        position: absolute;
+        
+    }
+    .upload_img{
+        display: inline-block;
+        border: 3px solid rgb(163, 0, 0, 0.719);
+        width: 450px;
+        height: 450px;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        vertical-align: middle;
+        margin-top: 20px;
+    }
+    .container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.container button{
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+       
+    }
