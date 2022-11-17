@@ -2,15 +2,37 @@
 <html lang="pt">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/Logo.jpeg">   
         <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-
-        <title>Sobre nós | HemoPet</title>
+        <title>Contato | HemoPet</title>
         <meta name="description" content="HemoPet">
+        <script language="Javascript">
+            function validacaoEmail(field) {
+            usuario = field.value.substring(0, field.value.indexOf("@"));
+            dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+            if ((usuario.length >=1) &&
+                (dominio.length >=3) &&
+                (usuario.search("@")==-1) &&
+                (dominio.search("@")==-1) &&
+                (usuario.search(" ")==-1) &&
+                (dominio.search(" ")==-1) &&
+                (dominio.search(".")!=-1) &&
+                (dominio.indexOf(".") >=1)&&
+                (dominio.lastIndexOf(".") < dominio.length - 1)) {
+            document.getElementById("msgemail").innerHTML="E-mail válido";
+            
+            }
+            else{
+            document.getElementById("msgemail").innerHTML="<font color='red'>Email inválido </font>";
+            alert("E-mail invalido");
+            }
+            }
+            </script>
     </head>
     <body class="container">
       <div class="preloader">
@@ -74,25 +96,34 @@
                             </b>
                         </p>
                         <h2 class="h2-baslik-anasayfa-ozel"> Envie um email </h2>
+
+                    
+                        <form name="f1" action="https://formsubmit.co/hemo.pet.doe@gmail.com" method="POST">
                         <p><b red>Nome:</b></p>
-                        <input class="   " type="text" name = "nome-required" value="" data-validate="required">
+                        <input class="   " type="text" pattern="^[A-Za-z]{3,30}$" name = "nome-required"  placeholder="Preencha o nome" required value="" data-validate="required">
                         <p><b>Assunto:</b></p>
-                            <select class="   " name = "assunto-required" value="" data-validate="required">
+                            <select class="   " name = "assunto-required" required value="" data-validate="required">
                                 <option value="">Selecionar</option>
                                 <option  value="Sugestão">Sugestão</option>
                                 <option  value="Crítica">Crítica</option>
                                 <option  value="Elogio">Elogio</option>
                                 <option  value="Parceiro">Seja um Parceiro</option>
                             </select>
+                            
                             <p><b>E-mail:</b></p>
-                                <input class="   " type="email" name = "email-required-valid_email" value="" data-validate="email">
+                            <input type="text" name="email" onblur="validacaoEmail(f1.email)"  maxlength="60" size='65'placeholder="Coloque seu melhor e-mail" value=""  required data-validate="email">
+                            <div id="msgemail"></div>
+
                             <p><b>Telefone:</b></p>
-                                <input class="   " type="tel" name = "telefone-required" value="" data-validate="phone">
+                                <input class="   " type="tel"  pattern="^[0-9]{8,10}$" name = "telefone-required" value="" required data-validate="phone">
                             <p><b>Mensagem:</b></p>
-                                <textarea data-validate="required" class="   " name="mensagem-required"></textarea>
+                                <textarea data-validate="required" rows="4" cols="50" class="   "  placeholder="Digite aqui sua mensagem" required name="mensagem-required"></textarea>
                             <div>
                                 <b><input class="right" type="submit" value="ENVIAR" /></b>
                             </div>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigada.html">
+                        </fomr>
                     
                     
                 </div>
