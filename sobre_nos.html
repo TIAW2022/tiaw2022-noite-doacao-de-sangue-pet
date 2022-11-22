@@ -23,12 +23,14 @@
           <div class="menu__arkaplan">&nbsp;</div>
           <nav class="menu__nav">
               <ul class="menu__list">
-                  <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-                  <li class="menu__item"><a href="serviços.html" class="menu__link">Serviços</a></li>
-                  <li class="menu__item"><a href="informaçoes.html" class="menu__link">Informações</a></li>
-                  <li class="menu__item"><a href="cadstro.html" class="menu__link">Cadastro</a></li>
-                  <li class="menu__item"><a href="sobre_nos.html" class="menu__link">Sobre nós</a></li>
-                  <li class="menu__item"><a href="contatos.html" class="menu__link">Contatos</a></li>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="servicos.html" class="menu__link">Serviços</a></li>
+                    <li class="menu__item"><a href="informacoes.html" class="menu__link">Informaçoes</a></li>
+                    <li class="menu__item"><a href="sobre_nos.html" class="menu__link">Sobre nós</a></li>
+                    <li class="menu__item"><a href="cadastro.html" class="menu__link">Cadastro</a></li>
+                    <li class="menu__item"><a href="login.html" class="menu__link">Login</a></li>
+                    <li class="menu__item"><a href="contatos.html" class="menu__link">Contatos</a></li>
               </ul>            
           </nav>
         <header class="header">
@@ -71,30 +73,49 @@
         <footer class="footer">              
           <div class="tablo-footer">
               <div class="ozel">
-              <div class="tablo--2-ve-4">
-                  <h2 class="h2-baslik-footer h-yazi-margin-kucuk"> LINKS </h2> 
-                  <div class="footer__menu">
-                      <ul class="footer__list"> 
-                        <li class="footer__item"><a href="index.html" class="footer__link">Home</a></li>
-                        <li class="footer__item"><a href="serviços.html" class="footer__link">Serviços</a></li>
-                        <li class="footer__item"><a href="informaçoes.html" class="footer__link">Informações</a></li>
-                        <li class="footer__item"><a href="cadastro.html" class="footer__link">Cadastro</a></li>
-                        <li class="footer__item"><a href="sobre_nos.html" class="footer__link">Sobre nós</a></li>
-                        <li class="footer__item"><a href="contatos.html" class="footer__link">Contatos</a></li>
-                      </ul>      
-                  </div>                   
+                <div class="tablo--2-ve-6">
+                    <h2 class="h2-baslik-footer h-yazi-margin-kucuk"> LINKS </h2> 
+                    <div class="footer__menu">
+                        <ul class="footer__list"> 
+                            <li class="footer__item"><a href="index.html" class="footer__link">Home</a></li>
+                            <li class="footer__item"><a href="servicos.html" class="footer__link">Serviços</a></li>
+                            <li class="footer__item"><a href="informaçoes.html" class="footer__link">Informações</a></li>
+                            <li class="footer__item"><a href="sobre_nos.html" class="footer__link">Sobre nós</a></li>
+                            <li class="footer__item"><a href="cadastro.html" class="footer__link">Cadastro</a></li>
+                            <li class="footer__item"><a href="login.html" class="footer__link">Login</a></li>
+                            <li class="footer__item"><a href="contatos.html" class="footer__link">Contatos</a></li>
+                        </ul>      
+                    </div>                  
               </div>
           <div class="ozel-copyright">
               <div class="footer__copyright">
                   &copy; 2022 - HemoPet-Todos os direiros reservados.
               </div>
-          </div>
-          <div id="top" style="cursor: pointer;">
-          </div>
+              <div id="top" style="cursor: pointer;">
+                <img width="50" height="50" src="img/go-top.png" alt=""/>
+            </div>
           <script src="js/jquery.min.js"></script>
           <script src="js/swiper.min.js"></script> 
           <script src="js/wow.min.js"></script> 
           <script src="js/scripts.js"></script>
+
+          <script src="js/pointer.js"></script>
+          <!--Cursor Script-->                    
+          <script>
+              init_pointer({
+                  
+              })
+          </script>
+          <script>
+              function myFunction() {
+              var x = document.getElementById("mymenunav");
+              if (x.className === "menunav") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "menunav";
+              }
+              }
+          </script>
 
       </footer>
 
