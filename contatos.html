@@ -2,13 +2,13 @@
 <html lang="pt">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/Logo.jpeg">   
         <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
         <title>Contato | HemoPet</title>
         <meta name="description" content="HemoPet">
         <script language="Javascript">
@@ -46,14 +46,15 @@
           </label>
           <div class="menu__arkaplan">&nbsp;</div>
           <nav class="menu__nav">
-              <ul class="menu__list">
-                  <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-                  <li class="menu__item"><a href="serviços.html" class="menu__link">Serviços</a></li>
-                  <li class="menu__item"><a href="informaçoes.html" class="menu__link">Informações</a></li>
-                  <li class="menu__item"><a href="cadstro.html" class="menu__link">Cadastro</a></li>
-                  <li class="menu__item"><a href="sobrenos.html" class="menu__link">Sobre nós</a></li>
-                  <li class="menu__item"><a href="contatos.html" class="menu__link">Contatos</a></li>
-              </ul>            
+            <ul class="menu__list">
+                <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="servicos.html" class="menu__link">Serviços</a></li>
+                <li class="menu__item"><a href="informacoes.html" class="menu__link">Informaçoes</a></li>
+                <li class="menu__item"><a href="sobre_nos.html" class="menu__link">Sobre nós</a></li>
+                <li class="menu__item"><a href="cadastro.html" class="menu__link">Cadastro</a></li>
+                <li class="menu__item"><a href="login.html" class="menu__link">Login</a></li>
+                <li class="menu__item"><a href="contatos.html" class="menu__link">Contatos</a></li>
+            </ul>               
           </nav>
         <header class="header">
         <div class="header__logo-alani">
@@ -100,7 +101,9 @@
                     
                         <form name="f1" action="https://formsubmit.co/hemo.pet.doe@gmail.com" method="POST">
                         <p><b red>Nome:</b></p>
-                        <input class="   " type="text" pattern="^[A-Za-z]{3,30}$" name = "nome-required"  placeholder="Preencha o nome" required value="" data-validate="required">
+                        <input class="   " type="text" pattern="^[A-Za-z]{3,30}$" name = "nome-required"  placeholder="Preencha com seu nome" required value="" data-validate="required">
+                        <p><b red>Sobrenome:</b></p>
+                        <input class="   " type="text" pattern="^[A-Za-z]{3,30}$" name = "nome-required"  placeholder="Preencha seu sobrenome" required value="" data-validate="required">
                         <p><b>Assunto:</b></p>
                             <select class="   " name = "assunto-required" required value="" data-validate="required">
                                 <option value="">Selecionar</option>
@@ -109,13 +112,13 @@
                                 <option  value="Elogio">Elogio</option>
                                 <option  value="Parceiro">Seja um Parceiro</option>
                             </select>
-                            
                             <p><b>E-mail:</b></p>
-                            <input type="text" name="email" onblur="validacaoEmail(f1.email)"  maxlength="60" size='65'placeholder="Coloque seu melhor e-mail" value=""  required data-validate="email">
-                            <div id="msgemail"></div>
-
-                            <p><b>Telefone:</b></p>
-                                <input class="   " type="tel"  pattern="^[0-9]{8,10}$" name = "telefone-required" value="" required data-validate="phone">
+                            <input type="text" name="email" onblur="validacaoEmail(f1.email)" placeholder="Coloque seu melhor e-mail" value=""  required data-validate="email">
+                            <div id="msgemail"></div>                            
+                            <p><b>Telefone Residencial:</b></p>
+                                <input class="   " type="tel"  pattern="^[0-9]{8,11}$" name = "telefone-required" placeholder="Digite seu telefone fixo"value="" required data-validate="phone">
+                                <p><b>Telefone Celular:</b></p>
+                                <input class="   " type="tel"  pattern="^[0-9]{8,12}$" name = "telefone-required" placeholder="Digite seu telefone celular"value="" required data-validate="phone">
                             <p><b>Mensagem:</b></p>
                                 <textarea data-validate="required" rows="4" cols="50" class="   "  placeholder="Digite aqui sua mensagem" required name="mensagem-required"></textarea>
                             <div>
@@ -133,31 +136,35 @@
             
 
             </section>
+
+            <footer class="footer">              
+                <div class="tablo-footer">
+                    <div class="ozel">
+                    <div class="tablo--2-ve-6">
+                        <h2 class="h2-baslik-footer h-yazi-margin-kucuk"> LINKS </h2> 
+                        <div class="footer__menu">
+                            <ul class="footer__list"> 
+                              <li class="footer__item"><a href="index.html" class="footer__link">Home</a></li>
+                              <li class="footer__item"><a href="servicos.html" class="footer__link">Serviços</a></li>
+                              <li class="footer__item"><a href="informaçoes.html" class="footer__link">Informações</a></li>
+                              <li class="footer__item"><a href="sobre_nos.html" class="footer__link">Sobre nós</a></li>
+                              <li class="footer__item"><a href="cadastro.html" class="footer__link">Cadastro</a></li>
+                              <li class="footer__item"><a href="login.html" class="footer__link">Login</a></li>
+                              <li class="footer__item"><a href="contatos.html" class="footer__link">Contatos</a></li>
+                            </ul>      
+                        </div> 
             
           
-        <footer class="footer">              
-          <div class="tablo-footer">
-              <div class="ozel">
-              <div class="tablo--2-ve-4">
-                  <h2 class="h2-baslik-footer h-yazi-margin-kucuk"> LINKS </h2> 
-                  <div class="footer__menu">
-                      <ul class="footer__list"> 
-                        <li class="footer__item"><a href="index.html" class="footer__link">Home</a></li>
-                        <li class="footer__item"><a href="serviços.html" class="footer__link">Serviços</a></li>
-                        <li class="footer__item"><a href="informaçoes.html" class="footer__link">Informações</a></li>
-                        <li class="footer__item"><a href="cadastro.html" class="footer__link">Cadastro</a></li>
-                        <li class="footer__item"><a href="sobre_nos.html" class="footer__link">Sobre nós</a></li>
-                        <li class="footer__item"><a href="contatos.html" class="footer__link">Contatos</a></li>
-                      </ul>      
-                  </div>                   
+                              
               </div>
           <div class="ozel-copyright">
-              <div class="footer__copyright">
-                  &copy; 2022 - HemoPet-Todos os direiros reservados.
-              </div>
+            <div id="top" style="cursor: pointer;">
+                <img width="50" height="50" src="img/go-top.png" alt=""/>
+            </div>
           </div>
           <div id="top" style="cursor: pointer;">
           </div>
+          
           <script src="js/jquery.min.js"></script>
           <script src="js/swiper.min.js"></script> 
           <script src="js/wow.min.js"></script> 
@@ -165,6 +172,24 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
           integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
           crossorigin="anonymous"></script>
+
+          <script src="js/pointer.js"></script>
+          <!--Cursor Script-->                    
+          <script>
+              init_pointer({
+                  
+              })
+          </script>
+          <script>
+              function myFunction() {
+              var x = document.getElementById("mymenunav");
+              if (x.className === "menunav") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "menunav";
+              }
+              }
+          </script>
 
       </footer>
 
