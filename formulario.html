@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Complatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/Logo.jpeg">    
+        <title>Formulario | HemoPet</title>
+        <meta name="description" content="HemoPet">
+    </head>
+    <div>
+    </header>    
+    <header class="header-area">
+        <div class="header-area-top">
+            <h1 class="header-area-top-titles">
+                <span class="header-area-top-titles--1"> Formulario</span>
+                <span class="header-area-top-titles--2"><a href="index.html">Home </a> / Formulario</span>
+            </h1>
+        </div>   
+    </header>
+    </div>
+
+    <div class="page-transition"></div>
+    <!--Menü Alanı-->
+      <input type="checkbox" class="menu__checkbox" id="menu-gecis">
+      <label for="menu-gecis" class="menu__buton">
+          <span class="menu__icon">&nbsp;</span>
+      </label>
+      <div class="menu__arkaplan">&nbsp;</div>
+      <nav class="menu__nav">
+          <ul class="menu__list">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="servicos.html" class="menu__link">Informaçoes</a></li>
+                <li class="menu__item"><a href="registro.html" class="menu__link">Cadastro</a></li>
+                <li class="menu__item"><a href="sobre_nos.html" class="menu__link">Sobre nós</a></li>
+                <li class="menu__item"><a href="login.html" class="menu__link">Login</a></li>
+                <li class="menu__item"><a href="contatos.html" class="menu__link">Contatos</a></li>
+                <li class="menu__item"><a href="formulario.html" class="menu__link">Formulario  de doação</a></li>
+              </ul>      
+      </nav>
+      
+            
+       <header> 
+           
+        <title>Formulário !Doação de sangue</title>
+        
+        <style>
+            
+           body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+           }
+           .box{
+            color: rgb(160, 53, 53);
+             position: absolute;
+             top: 72%;
+             left: 50%;
+            
+             background-color: rgba(0, 0, 0, 0.973);
+             padding: 50px;
+             border-radius: 20px;
+             
+           }
+           fieldset{
+            border: 3px solid rgb(168, 4, 4, 0.767);
+            
+           
+           }
+           legend{
+            border: 15px solid rgb(168, 4, 4, 0.767);
+               padding: 10px;
+               text-align: center;
+               background-color: rgb(168, 4, 4, 0.767);
+               border-radius: 8px;
+               
+           }
+           .inputBox{
+               position: relative;
+           }
+           .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid rgb(121, 110, 110);
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+           }
+           .labelInput{
+             position: absolute;
+             top: 0px;
+             left: 0px;
+             pointer-events: none;
+             transition: .5s;
+           }
+           .inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput {
+             top: -20px;
+             font-size: 12px;
+             color: rgb(168, 4, 4, 0.767);
+           }
+          #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+          }
+         #submit{
+            background-image: linear-gradient(to right, rgb(255, 0, 0, 0.801), rgb(167, 11, 0, 0.705));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+         }
+         #submit:hover{
+            background-image: linear-gradient(to right, rgb(153, 0, 0), rgb(99, 7, 0, 0.705));
+         }
+         #experiencia{
+            
+           
+           
+           
+            font-size: 15px;
+            
+           
+            border-radius: 10px;
+         }
+         
+         
+         .btn{
+        width: 500px;
+        border: 2px dashed rgb(163, 0, 0, 0.719) !important;
+        font-size: 19px;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 19px, 40px;
+
+    }
+    .upload-btn input[type=file] {
+        font-size: 10px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+    .upload_img{
+        display: inline-block;
+        border: 3px solid rgb(163, 0, 0, 0.719);
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        vertical-align: middle;
+        margin-top: 10px;
+    }
+    .container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.container button{
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+       
+    }
+</style>
+        </header>
+
+    <body>
+        <div>
+
+            <section class="">
+                <div class="">           
+                </div>
+                <div class="">
+                    <div class=" ">
+    <form action="">
+        <fieldset>
+            <legend><b>Formulário Para Doar Sangue</b></legend>
+            <br>
+            <div class="inputBox">
+                <input type="text" nome="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelInput">Nome completo</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="email" nome="email" id="email" class="inputUser" required>
+                <label for="email" class="labelInput">Email</label>
+            </div>
+            <br><br>
+            <div class="inputBox"> 
+                <input type="tel" nome="telefone" id="telefone" class="inputUser" required>
+                <label for="telefone" class="labelInput">Telefone</label>
+            </div>
+        
+            <p>Sexo:</p>
+            <input type="radio" id="femea" nome="genero" value="femea" required>
+            <label for="femea" >Fêmea</label>
+            <br>
+            <input type="radio" id="macho" nome="genero" value="macho" required>
+            <label for="macho">Macho</label>
+            <br>
+        
+            
+            <br><br>
+            
+             <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+             <input type="date" nome="data_nascimento" id="data_nascimento" required>
+
+            <br><br><br>
+        
+            <div class="inputBox">
+                <input type="text" nome="cidade" id="cidade" class="inputUser" required>
+                <label for="cidade" class="labelInput">Cidade</label>
+            </div> 
+            <br><br>
+            <div class="inputBox">
+                <input type="text" nome="estado" id="estado" class="inputUser" required>
+                <label for="estado" class="labelInput">Estado</label>
+            </div> 
+            <br><br>
+            <div class="inputBox">
+                <input type="text" nome="endereco" id="endereco" class="inputUser" required>
+                <label for="endereco" class="labelInput">Endereço</label>
+                
+            </div> 
+            <br><br>
+
+
+            <div>
+                <br>
+                <label>Conte um pouco sobre seu pet:</label>
+                <textarea row="20" style="width: 70em" id="experiencia" nome="experiencia"></textarea>
+                <br><br>
+            </div>
+        
+            
+<form action="">
+
+    <div class="container">
+        <label for="none"></label>
+        <div class="input-file-upload">
+          <div class="upload-btn">
+            <button class="btn">
+                Adiciona uma foto do seu pet 
+            </button>
+            <input type="file" id="upfile" onchange="readURL(this); ">
+          </div>
+           <img class="upload_img" id="file_upload"> 
+        </div>
+        <br>
+    </div>
+
+</form>
+<script src="formulario.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYn4dnWc1Qt5NtvYSaNcOP+u1T9qYdvd1hz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+             
+            <input type="submit" nome="submit" id="submit">
+        </fieldset>
+    </form>
+</div>
+</div>
+    </div>
+</section >  
+   </body>
+
+   <footer class="footer">              
+    <div class="tablo-footer">
+        <div class="ozel">
+          <div class="tablo--2-ve-7">
+              <h2 class="h2-baslik-footer h-yazi-margin-kucuk"> LINKS </h2> 
+              <div class="footer__menu">
+                  <ul class="footer__list"> 
+                      <li class="footer__item"><a href="index.html" class="footer__link">Home</a></li>
+                      <li class="footer__item"><a href="servicos.html" class="footer__link">Informações</a></li>
+                      <li class="footer__item"><a href="registro.html" class="footer__link">Cadastro</a></li>
+                      <li class="footer__item"><a href="sobre_nos.html" class="footer__link">Sobre nós</a></li>
+                      <li class="footer__item"><a href="login.html" class="footer__link">Login</a></li>
+                      <li class="footer__item"><a href="contatos.html" class="footer__link">Contatos</a></li>
+                      <li class="footer__item"><a href="formulario.html" class="footer__link">Formulario de doação</a></li>
+                  </ul>       
+              </div>                  
+        </div>
+    <div class="ozel-copyright">
+        <div class="footer__copyright">
+            &copy; 2022 - HemoPet-Todos os direiros reservados.
+        </div>
+        <div id="top" style="cursor: pointer;">
+          <img width="50" height="50" src="img/go-top.png" alt=""/>
+      </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script> 
+    <script src="js/wow.min.js"></script> 
+    <script src="js/scripts.js"></script>
+
+    <script src="js/pointer.js"></script>
+    <!--Cursor Script-->                    
+    <script>
+        init_pointer({
+            
+        })
+    </script>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("mymenunav");
+        if (x.className === "menunav") {
+            x.className += " responsive";
+        } else {
+            x.className = "menunav";
+        }
+        }
+    </script>
+
+</footer>
+
+</html>
