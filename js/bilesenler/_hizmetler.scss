@@ -1,0 +1,538 @@
+.hizmetler-kutu {
+    background-color: $beyaz-renk;
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 5.5rem 5.5rem;
+    box-shadow: 0 1.5rem 4rem rgba($siyah-renk, .15);
+    transition: transform .3s;
+
+    @include responsive(tablet-kucuk) {
+        padding: 2rem;
+    }
+
+    &--icon {
+    
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $anarenk-acik-mavi,$anarenk-koyu-mavi);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: 0;
+            font-size: 13rem;
+        }
+        
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+
+    &--yazi {
+        text-align: center;
+
+        @include responsive(tablet-kucuk) {
+            font-size: 3.5rem;
+        }
+    }
+
+}
+
+// özellik sayfası için 1
+
+.ozellik-kutu {
+    /*background-color: $beyaz-renk;*/
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    /*box-shadow: 0 1.5rem 4rem rgba($siyah-renk, .15);*/
+    transition: transform .3s;
+    /*height: 330px;*/
+
+    @media only screen and (max-width: 1180px) {
+        text-align: center;
+        align-items: center;
+        clear:both;
+        margin: auto;
+    }
+
+    @include responsive(tablet-kucuk) {
+        padding: 2rem;
+    }
+
+    &--icon {
+    
+        font-size: 6rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $anarenk-acik-kirmizi,$anarenk-koyu-kirmizi);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: 0;
+            font-size: 13rem;
+        }
+        
+    }
+
+    &:hover {
+        /*transform: translateY(-1.5rem) scale(1.03);*/
+    }
+
+    &--yazi {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 400;
+
+        @media only screen and (max-width: 375px) {
+            font-size: 3.3rem;
+            width: 290px;
+        }
+
+        @include responsive(tablet-kucuk) {
+            font-size: 3.3rem;
+
+        }
+
+
+    }
+
+}
+
+img.haber-gorsel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 1024px) {
+        width: 100%;
+    }
+    @media only screen and (max-width: 1180px) {
+        width: 100%;
+    }
+
+}
+
+img.team-gorsel {
+
+    @media only screen and (max-width: 1024px) {
+        width: 100%;
+    }
+
+}
+
+// özellik sayfası 2
+
+.ozellik-kutu-siyah {
+    background-color: $siyah-renk-1;
+    color: $beyaz-renk;
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba($siyah-renk, .15);
+    transition: transform .3s;
+
+    @include responsive(tablet-kucuk) {
+        padding: 2rem;
+    }
+
+    &--icon {
+    
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, #ffffff, #cecece);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: 0;
+            font-size: 13rem;
+        }
+        
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+
+    &--yazi {
+        text-align: center;
+
+        @include responsive(tablet-kucuk) {
+            font-size: 2.3rem;
+        }
+    }
+
+}
+// özellik sayfası beyaz
+
+.ozellik-kutu-beyaz {
+    background-color: $siyah-renk-1;
+    color: $beyaz-renk;
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba($siyah-renk, .15);
+    transition: transform .3s;
+
+    @include responsive(tablet-kucuk) {
+        padding: 2rem;
+    }
+
+    &--icon {
+    
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, #ffffff, #cecece);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: 0;
+            font-size: 13rem;
+        }
+        
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+
+    &--yazi {
+        text-align: center;
+        color: $beyaz-renk;
+
+        @include responsive(tablet-kucuk) {
+            font-size: 3rem;
+        }
+    }
+
+}
+// Post Kutu
+
+.post-kutu {
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: transform .3s;
+    border-radius: 5rem;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 500px;
+    width: 450px;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 1024px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @include responsive(telefon) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @include responsive(tablet-kucuk) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    @media only screen and (max-width: 1180px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    &--icon {
+    
+        font-size: 6rem;
+        margin-bottom: -0.5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $anarenk-acik-kirmizi,$anarenk-koyu-kirmizi);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: 0;
+            font-size: 13rem;
+        }
+        
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+
+    &--yazi {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+
+        @include responsive(tablet-kucuk) {
+            font-size: 3.5rem;
+            text-align: center;
+            padding: 2rem;
+        }
+    }
+
+}
+
+// yorum kutu
+
+.yorum-kutu {
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    /*transition: transform .3s;*/
+    border-radius: 5rem;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 500px;
+    width: 450px;
+    height: 453px;
+
+    @media only screen and (max-width: 1024px) {
+        width: auto;
+        height: auto;
+    }
+
+    @include responsive(telefon) {
+        padding: 2rem;
+        width: auto;
+        height: auto;
+        text-align: left;
+    }
+
+    @include responsive(tablet-kucuk) {
+        padding: 2rem;
+        width: auto;
+        height: auto;
+        text-align: left;
+
+    }
+
+    &--icon {
+    
+        font-size: 6rem;
+        margin-bottom: -0.5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $anarenk-acik-kirmizi,$anarenk-koyu-kirmizi);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: 0;
+            font-size: 13rem;
+        }
+        
+    }
+
+    &:hover {
+       /* transform: translateY(-1.5rem) scale(1.03);*/
+    }
+
+    &--yazi {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+
+        @include responsive(tablet-kucuk) {
+            font-size: 3.5rem;
+            text-align: left;
+            padding: 2rem;
+        }
+    }
+
+}
+// iletişim özellik icon
+
+.ozellik-kutu-iletisim {
+    background-color: $beyaz-renk;
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba($siyah-renk, .15);
+    /*transition: transform .3s;*/
+    border-radius: 63px;
+
+    @include responsive(tablet-kucuk) {
+        padding: 2rem;
+    }
+
+    &--icon {
+    
+        font-size: 6rem;
+        margin-bottom: -2rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $anarenk-koyu-kirmizi,$anarenk-normal-kirmizi);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: 0;
+            font-size: 13rem;
+        }
+        
+    }
+
+    &:hover {
+        /*transform: translateY(-1.5rem) scale(1.03);*/
+    }
+
+    &--yazi {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $gri-renk-7;
+    
+
+        @include responsive(tablet-kucuk) {
+            font-size: 3.5rem;
+        }
+    }
+
+    &--yazi-iletisim {
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $anarenk-normal-kirmizi;
+
+        @include responsive(tablet-kucuk) {
+            font-size: 3.5rem;
+        }
+    }
+
+}
+
+.baslik-4 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #be1e2d;
+
+    @media only screen and (max-width: 1024px) {
+        width: auto;
+    }
+
+    @include responsive(tablet-kucuk) {
+        padding: 2rem;
+        font-size: 5rem;
+    }
+
+    &--icon {
+    
+        font-size: 6rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $anarenk-acik-kirmizi,$anarenk-koyu-kirmizi);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: 0;
+            font-size: 13rem;
+        }
+        
+    }
+
+    &:hover {
+        /*transform: translateY(-1.5rem) scale(1.03);*/
+    }
+
+    &--yazi {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 400;
+
+        @media only screen and (max-width: 375px) {
+            font-size: 3.1rem;
+            width: 290px;
+        }
+
+        @include responsive(tablet-kucuk) {
+            font-size: 3.3rem;
+
+        }
+
+
+    }
+
+}
+
+// yorumlar için
+.ozellik-kutu-yorumlar {
+    background-color: $beyaz-renk;
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 1.5rem 4rem rgba($siyah-renk, .15);
+    transition: transform .3s;
+    width: 385px;
+    /*height: 330px;*/
+
+    @media only screen and (max-width: 1024px) {
+        width: auto;
+    }
+
+    @include responsive(tablet-kucuk) {
+        padding: 2rem;
+    }
+
+    &--icon {
+    
+        font-size: 6rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $anarenk-acik-kirmizi,$anarenk-koyu-kirmizi);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: 0;
+            font-size: 13rem;
+        }
+        
+    }
+
+    &:hover {
+        /*transform: translateY(-1.5rem) scale(1.03);*/
+    }
+
+    &--yazi {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 400;
+
+        @media only screen and (max-width: 375px) {
+            font-size: 3.1rem;
+            width: 290px;
+        }
+
+        @include responsive(tablet-kucuk) {
+            font-size: 3.3rem;
+
+        }
+
+
+    }
+
+}

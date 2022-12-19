@@ -1,0 +1,45 @@
+.yukaricik {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  background-image: linear-gradient(to right bottom, $anarenk-koyu-kirmizi, $anarenk-normal-kirmizi);
+  bottom: 0rem;
+  right: 5rem;
+  text-decoration: none;
+  text-align: center;
+  line-height: 5rem;
+  display: inline-block;
+  z-index: 0;
+
+  @include responsive(telefon) {
+      display: none;
+    }
+  
+    @include responsive(tablet-buyuk) {
+      display: none;
+    }
+}
+
+.yukaricik-icon {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  display: inline-block;
+  color: $beyaz-renk;
+
+  @include responsive(telefon) {
+      display: none;
+    }
+  
+    @include responsive(tablet-buyuk) {
+      display: none;
+    }
+}
+
+#top {
+bottom: 5px;
+bottom: -41px;
+display: none;
+height: 100px;
+position: fixed;
+right: 20px;
+}

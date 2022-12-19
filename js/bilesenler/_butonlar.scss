@@ -1,0 +1,328 @@
+/* Slider Buton */
+.buton {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        transition: all 2s;
+        position: relative;
+        font-size: 1.2rem;
+
+        //buton elemanları değişikliği için
+        cursor: pointer;
+
+        @include responsive(tablet-kucuk) {
+            font-size: 3.6rem;
+            padding: 3.5rem 6rem;
+        }
+        
+    }
+    
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($siyah-renk,.2);
+        
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($siyah-renk,.2);
+    }
+    
+    &--beyaz{
+        background-color: $beyaz-renk;
+        color:$gri-yazi-rengi;
+
+        &::after{
+            background-color: $beyaz-renk;
+        
+        }
+    }
+
+    &--siyah{
+        background-color: #444;
+        color:$beyaz-renk;
+
+        &::after{
+            background-color: #444;
+        
+        }
+    }
+
+    &--pembe-slider{
+        background-color: $anarenk-normal-pembe;
+        color:$beyaz-renk;
+        margin-top: 22.5rem;
+        left: -26rem;
+
+        @media only screen and (max-width: 1366px) {
+            background-color: #DE6FAA;
+            color: #fff;
+            margin-top: 29.5rem;
+            left: -26rem;
+          }
+
+        @include responsive(telefon) {
+            margin-top: 205.5rem;
+            left: -39rem;
+        }
+    
+        @include responsive(tablet-buyuk) {
+            /*left:-15px;*/
+            margin-top: 205.5rem;
+            left: -40rem;
+        }
+
+        &::after{
+            background-color: $anarenk-normal-pembe;
+        
+        }
+
+    }
+
+    &--pembe {
+        background-color: $anarenk-normal-pembe;
+        color:$beyaz-renk;
+
+        &::after{
+            background-color: $anarenk-normal-pembe;
+        
+        }
+    }
+
+    
+    &--kirmizi {
+        background-color: $anarenk-normal-kirmizi;
+        color:$beyaz-renk;
+
+        &::after{
+            background-color: $anarenk-koyu-kirmizi;
+        
+        }
+    }
+
+    &--kirmizislider {
+        background-color: $anarenk-normal-kirmizi;
+        color:$beyaz-renk;
+        margin-right: 82rem;
+
+        &::after{
+            background-color: $anarenk-koyu-kirmizi;
+        
+        }
+    }
+    
+    
+    &::after{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    &--animasyon{
+        animation: butonefekt .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+}
+
+.h-buton-link {
+
+    &:link,
+    &:visited {
+
+        font-size: 1.7rem;
+        color:$gri-yazi-rengi;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: .1rem solid $gri-yazi-rengi;
+        padding: .3rem;
+        transition: all .2s;
+
+        @include responsive(tablet-kucuk) {
+            font-size: 4.7rem;
+        }
+
+    }
+
+    &:hover {
+
+        background-color: $anarenk-koyu-kirmizi;
+        color:$beyaz-renk;
+        box-shadow: 0 1rem 2rem rgba($siyah-renk,.15);
+        transform: translateY(-.2rem);
+
+    }
+
+    &:active {
+
+        box-shadow: 0 .5rem 1rem rgba($siyah-renk,.15);
+        transform: translateY(0);
+
+    }
+}
+
+// SS Buton
+
+.buton1 {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        transition: all 2s;
+        position: relative;
+        font-size: 1.2rem;
+
+        //buton elemanları değişikliği için
+        cursor: pointer;
+        text-align: center;
+
+
+
+        @include responsive(tablet-kucuk) {
+            font-size: 2.6rem;
+            padding: 1.5rem 0rem;
+        }
+
+        @media only screen and (max-width: 812px) {
+            font-size: 3rem;
+        } 
+        
+    }
+    
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($siyah-renk,.2);
+        
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($siyah-renk,.2);
+    }
+    
+    &--beyaz{
+        background-color: $beyaz-renk;
+        color:$gri-yazi-rengi;
+
+        &::after{
+            background-color: $beyaz-renk;
+        
+        }
+    }
+
+    &--siyah{
+        background-color: #444;
+        color:$beyaz-renk;
+
+        &::after{
+            background-color: #444;
+        
+        }
+    }
+
+    &--pembe-slider{
+        background-color: $anarenk-normal-pembe;
+        color:$beyaz-renk;
+        margin-top: 22.5rem;
+        left: -26rem;
+
+        @media only screen and (max-width: 1366px) {
+            background-color: #DE6FAA;
+            color: #fff;
+            margin-top: 29.5rem;
+            left: -26rem;
+          }
+
+        @include responsive(telefon) {
+            margin-top: 205.5rem;
+            left: -39rem;
+        }
+    
+        @include responsive(tablet-buyuk) {
+            /*left:-15px;*/
+            margin-top: 205.5rem;
+            left: -40rem;
+        }
+
+        &::after{
+            background-color: $anarenk-normal-pembe;
+        
+        }
+
+    }
+
+    &--pembe {
+        background-color: $anarenk-normal-pembe;
+        color:$beyaz-renk;
+
+        &::after{
+            background-color: $anarenk-normal-pembe;
+        
+        }
+    }
+
+    
+    &--kirmizi {
+        background-color: $anarenk-normal-kirmizi;
+        color:$beyaz-renk;
+
+        &::after{
+            background-color: $anarenk-koyu-kirmizi;
+        
+        }
+    }
+
+    &--kirmizislider {
+        background-color: $anarenk-normal-kirmizi;
+        color:$beyaz-renk;
+
+        &::after{
+            background-color: $anarenk-koyu-kirmizi;
+        
+        }
+    }
+    
+    
+    &::after{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    &--animasyon{
+        animation: butonefekt .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+}
