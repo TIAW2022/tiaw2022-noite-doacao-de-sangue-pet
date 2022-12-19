@@ -1,0 +1,294 @@
+.hakkimizda-bolumu-anasayfa {
+    padding: 0rem 0 5rem;
+    background-color: $beyaz-renk;
+
+    @include responsive(tablet-kucuk) {
+        padding: 0rem 0 1rem;
+        margin-top: -50rem;
+    }
+    @include responsive(tablet-kucuk) {
+        padding: 0rem 0 1rem;
+        margin-top: -55rem;
+    }
+
+}
+
+// hakkımızda sayfası
+
+.hakkimizda-bolumu-hakkimizda {
+    padding: 5rem 0 1rem;
+    background-color: $beyaz-renk;
+
+    @include responsive(tablet-kucuk) {
+        padding: 0rem 0;
+        margin-top: -55rem;
+    }
+    @include responsive(tablet-kucuk) {
+        padding: 0rem 0;
+        margin-top: -75rem;
+    }
+}
+
+// 404 Sayfası
+
+.hata-404 {
+    padding: 5rem 0 5rem;
+    background-color: $beyaz-renk;
+
+    @include responsive(tablet-kucuk) {
+        padding: 0rem 0;
+        margin-top:20vh;
+    }
+    @include responsive(tablet-kucuk) {
+        padding: 0rem 0;
+        margin-top:-20vh;
+    }
+}
+
+//hizmetler anasayfa alanı
+
+.hizmetler-alani {
+    padding: 6rem 0 5rem;
+    background-image: linear-gradient(to right bottom, $beyaz-renk, #fbfbfb);
+
+    @include responsive(tablet-kucuk) {
+        padding: 10rem 0 17rem;
+        margin-top: -20rem;
+    }
+}
+
+// hizmetler paragraf alanı
+
+.hizmetler-aciklama {
+    padding: 6rem 0 5rem;
+    background-image: linear-gradient(to right bottom, $beyaz-renk, #fbfbfb);
+
+    @include responsive(tablet-kucuk) {
+        padding: 10rem 0 17rem;
+    }
+}
+
+//services1
+
+.services1 {
+    padding: 5rem 0 5rem;
+    background-color: $beyaz-renk;
+    background: url('../img/service-term.jpg');
+
+    @include responsive(tablet-kucuk) {
+        padding: 10rem 0;
+    }
+}
+
+//services2
+
+.services2 {
+    padding: 5rem 0 5rem;
+    background-color: $beyaz-renk;
+
+    @include responsive(tablet-kucuk) {
+        padding: 10rem 0;
+    }
+}
+// yorumlar alanı
+.yorumlar-alani {
+    padding: 5rem 0 5rem;
+    background-color: $beyaz-renk;
+
+    @include responsive(tablet-kucuk) {
+        padding: 10rem 0;
+    }
+}
+//post sayfası
+.post-alani-sayfa {
+    padding: 5rem 0 7rem;
+    background-image: url(../img/news-bg.jpg);
+
+    @include responsive(tablet-kucuk) {
+        padding: 10rem 0;
+    }
+}
+
+// yorumlar alan
+.yorumlar-alani-sayfa {
+    padding: 5rem 0 8rem;
+    background-image: url(../img/yorum-bg.jpg);
+
+    @include responsive(tablet-kucuk) {
+        padding: 10rem 0;
+    }
+}
+
+//ekip alanı
+.ekip-alani-sayfa {
+    padding: 5rem 0 5rem;
+
+    @include responsive(tablet-kucuk) {
+        padding: 10rem 0;
+    }
+}
+
+.news-alani-sayfa {
+    padding: 5rem 0 20rem;
+    background: $beyaz-renk;
+
+    @include responsive(tablet-kucuk) {
+        padding: 10rem 0;
+    }
+}
+
+img.haber-gorsel {
+    
+
+    @include responsive(telefon) {
+        width: 250px;
+        text-align: center;
+    }
+
+    @include responsive(tablet-kucuk) {
+        
+        text-align: center;
+    }
+
+}
+
+
+.yorumlar-alani {
+    position: relative;
+    padding: 5rem 0 5rem;
+    background-image: linear-gradient(to right bottom, #ffffff, #fbfbfb);
+    background-size: cover;
+
+    @include responsive(tablet-kucuk) {
+        padding: 5rem 0 0rem;
+    }
+}
+
+.form-alani {
+    padding: 40rem 0;
+    background-image: linear-gradient(to right bottom,$anarenk-acik-mavi,$anarenk-koyu-mavi);
+    margin-top: -30vh;
+
+}
+
+//projeler anasayfa için
+
+.projeler {
+    position: relative;
+    padding: 5rem 0 5rem;
+    background-image: linear-gradient(to right bottom, #ffffff, #fbfbfb);
+    background-size: cover;
+
+    @include responsive(tablet-kucuk) {
+        padding: 15rem 0 16rem;
+    }
+}
+
+// projeler sayfası için
+
+.projeler-sayfa-alani {
+    padding: 5rem 0 5rem;
+    background-color: $beyaz-renk;
+    /*margin-top: -10rem;*/
+
+    @include responsive(tablet-kucuk) {
+        padding: 15rem 0 16rem;
+    }
+}
+
+// markalar
+
+.markalar {
+    padding: 5rem 0 1rem;
+    background-image: linear-gradient(to right bottom, #383535, #020202);
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+
+    @include responsive(tablet-kucuk) {
+        padding: 15rem 0 16rem;
+    }
+}
+
+// bottom
+.bottom {
+    padding: 5rem 0 1rem;
+    background-image: linear-gradient(to right bottom, #fffefe, #ffffff);
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+
+    @include responsive(tablet-kucuk) {
+        padding: 15rem 0 16rem;
+    }
+}
+
+// hizmetler detay sayfa
+
+.hizmetler-detay-sayfasi-alani {
+    padding: 20rem 0 5rem;
+    margin-top:-20vh;
+    background-color: $beyaz-renk;
+
+    @include responsive(tablet-kucuk) {
+        padding: 0rem 0rem 20rem;
+        margin-top:20vh;
+    }
+    @include responsive(tablet-kucuk) {
+        padding: 0rem 0rem 20rem;
+        margin-top:-20vh;
+    }
+}
+
+// proje detay sayfası alanı
+
+// hizmetler detay sayfa
+
+.proje-detay-sayfasi-alani {
+    padding: 5rem 0 1rem;
+    /*margin-top:-20vh;*/
+    background-color: $beyaz-renk;
+
+    @include responsive(tablet-kucuk) {
+        padding: 40rem 0rem 5rem;
+        margin-top:20vh;
+    }
+    @include responsive(tablet-kucuk) {
+        padding: 40rem 0rem 5rem;
+        margin-top:-20vh;
+    }
+}
+
+// İletişim İcon Alanı
+
+.iletisim-icon-alani {
+    padding: 20rem 0rem 1rem;
+    margin-top:-20vh;
+    background-color: $beyaz-renk;
+
+    @include responsive(tablet-kucuk) {
+        padding: 15rem 0;
+        margin-top:20vh;
+    }
+    @include responsive(tablet-kucuk) {
+        padding: 15rem 0;
+        margin-top:-20vh;
+    }
+}
+
+// İletişim Form Alanı
+
+.iletisim-form-alani {
+    padding: 20rem 0 10rem;
+    margin-top:-20vh;
+    background-color: $beyaz-renk;
+
+    @include responsive(tablet-kucuk) {
+        padding: 0rem 0;
+        margin-top:20vh;
+    }
+    @include responsive(tablet-kucuk) {
+        padding: 0rem 0;
+        margin-top:-20vh;
+    }
+}
