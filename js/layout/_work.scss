@@ -1,0 +1,424 @@
+/* -------------------------------------------------------
+                   09 - portfolio
+-------------------------------------------------------- */
+.root-work {
+  width: 100%;
+  position: relative;
+
+  .filterings {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: $margin-padding;
+    @include media_991 {
+      margin-bottom: $margin-padding-mobile;
+    }
+    width: 100%;
+    z-index: 2;
+
+
+    .filtering-wrap {
+      width: inherit;
+      position: relative;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+      margin: auto;
+      text-align: center;
+
+      @include media_575 {
+        border-bottom: 0;
+
+      }
+
+      @include v-light {
+        border-bottom: solid 2px rgba(190, 190, 190, 0.27);
+      }
+
+      .filtering {
+        overflow: auto;
+        position: relative;
+        margin-bottom: -2px;
+
+        button {
+          color: #fff;
+          width: auto;
+          margin: 0 30px 0 0;
+          padding: 0 5px 18px 5px;
+          font-size: 14px;
+          font-weight: 500;
+          display: inline-block;
+          cursor: pointer;
+          transition: all 0.15s ease-in-out;
+          transition-duration: 0.6s;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+
+          @include media_575 {
+            margin-right: 10px;
+
+          }
+
+          @include v-light {
+            color: $body-color-light
+          }
+
+          &.active {
+            font-weight: bold;
+            border-bottom: solid 2px #fff;
+
+            @include v-light {
+              border-bottom: solid 2px $border-color-light;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .projects-list {
+    position: relative;
+    width: 100%;
+
+    .item {
+      width: 50%;
+      position: relative;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 50px;
+      @include media_768 {
+        width: 100%;
+      }
+
+      &::before {
+        z-index: -1;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:nth-child(2) {
+        margin-top: 160px;
+        @include media_768 {
+          margin-top: 50px;
+        }
+      }
+
+      a {
+        position: relative;
+        display: block;
+        overflow: hidden;
+
+        .item-border {
+          position: absolute;
+          top: 0;
+          left: 15px;
+          right: 15px;
+          bottom: 0;
+          transform: scale(1.5);
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 100%);
+          transition: transform 0.6s, background 0.6s cubic-bezier(0.9, 0.03, 0.22, 0.97), -webkit-transform 0.6s;
+          z-index: 1;
+        }
+
+        img {
+          display: block;
+          object-fit: cover;
+        }
+
+        .item-info {
+          position: absolute;
+          left: 50%;
+          padding: 25px 15px 30px;
+          width: 270px;
+          text-align: center;
+          transition: transform 0.5s cubic-bezier(0.08, 0.03, 0.22, 0.87);
+          z-index: 2;
+          top: auto;
+          bottom: 0;
+          transform: translate(-50%, 0);
+
+          .cat {
+            font-size: 13px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-family: $body-font;
+            opacity: 0.9;
+
+            @include v-light {
+              color: $heading-color;
+            }
+          }
+
+          h4 {
+            position: relative;
+            color: #fff;
+            font-size: 25px;
+            transition: margin-bottom 0.5s ease;
+            z-index: 3;
+            font-weight: 600;
+          }
+
+          span {
+            color: #fff;
+            opacity: 0;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: opacity 0.6s ease;
+            position: relative;
+          }
+        }
+
+        &:hover {
+          .item-border {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.41) 0%, rgba(0, 0, 0, 0.99) 100%);
+          }
+
+          .item-info {
+            transform: translate(-50%, -50px);
+
+            h4 {
+              margin-bottom: 10px;
+            }
+
+            span {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .box-title {
+    position: absolute;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+
+    h2 {
+      top: -50px;
+      transform: none;
+      width: 100%;
+      left: 0;
+      font-size: 10vw;
+      z-index: -1;
+      @include media_991 {
+        top: -15px;
+      }
+    }
+  }
+
+  &.root-work-two {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+
+    .projects-list {
+      .item {
+        margin-top: 0;
+        width: 33.33333%;
+        margin-bottom: 50px;
+
+        &:nth-of-type(2) {
+          margin-top: 50px;
+        }
+
+        @include media_991 {
+          width: 49.5%;
+        }
+        @include media_768 {
+          width: 100%;
+          &:nth-of-type(2) {
+            margin-top: 0;
+          }
+        }
+
+        a {
+          height: auto;
+
+          .item-border {
+            display: none;
+          }
+
+          img {
+            transition: 1.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+
+          .item-info {
+            position: relative;
+            left: auto;
+            top: auto;
+            transform: none;
+            padding: 25px 15px 0;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.5s cubic-bezier(0.08, 0.03, 0.22, 0.87),
+            -webkit-transform 0.5s cubic-bezier(0.08, 0.03, 0.22, 0.87);
+            z-index: 2;
+
+            .cat {
+              font-size: 13px;
+              letter-spacing: 2px;
+              font-weight: 500;
+              text-transform: uppercase;
+              margin-bottom: 10px;
+              font-family: $body-font;
+              opacity: 0.9;
+
+              @include v-light {
+                color: $heading-color-light;
+              }
+            }
+
+            h4 {
+              position: relative;
+              color: #fff;
+              font-size: 20px;
+              transition: margin-bottom 0.5s ease;
+              z-index: 3;
+              font-weight: 600;
+              @include v-light {
+                color: $heading-color-light;
+              }
+            }
+
+            span {
+              color: #fff;
+              opacity: 0;
+              transition: opacity 0.6s ease;
+              position: relative;
+            }
+          }
+
+          &:hover {
+            img {
+              transform: scale(0.95);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.filterings-sticy {
+  position: fixed;
+  width: 225px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  z-index: 2;
+  pointer-events: none;
+
+  .filtering-wrap {
+    width: 100%;
+    position: relative;
+
+    .filtering {
+      overflow: auto;
+      position: relative;
+      margin-bottom: -2px;
+
+      button {
+        position: relative;
+        color: #fff;
+        width: max-content;
+        margin: 0 30px 0 0;
+        padding: 18px 5px;
+        padding-left: 0;
+        font-size: 14px;
+        font-weight: 500;
+        display: block;
+        cursor: pointer;
+        transition: width 0.3s ease-in-out;
+        transition-duration: 0.6s;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        pointer-events: auto;
+
+        @include v-light {
+          color: $body-color-light
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: #fff;
+          transition: all 0.3s ease-in-out;
+          margin-top: -1px;
+          opacity: 0.7;
+
+          @include v-light {
+            background-color: $border-color-light;
+          }
+        }
+
+        &.active {
+          font-weight: bold;
+          color: #242424;
+
+          @include v-light {
+            color: $heading-color-light;
+          }
+
+          &::before {
+            width: 100%;
+          }
+        }
+
+        &:hover {
+          font-weight: bold;
+          color: #242424;
+
+          @include v-light {
+            color: $heading-color-light;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transition: all 0.3s ease-in-out;
+            margin-top: -1px;
+            opacity: 0.7;
+
+            @include v-light {
+              background-color: $border-color-light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-padding-work {
+  padding-top: 180px;
+  padding-bottom: 130px;
+
+  &.root-work.root-work-two {
+    .box-title {
+      h2 {
+        top: -180px;
+      }
+    }
+
+    .projects-list .item a .item-info span {
+      display: none;
+    }
+  }
+}
