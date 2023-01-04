@@ -1,0 +1,211 @@
+.footer {
+    background-image: linear-gradient(to right bottom, $anarenk-acik-kirmizi, $anarenk-normal-kirmizi);
+    padding: 1rem 0 1rem;
+    font-size: 1.4rem;
+    color: $beyaz-renk;
+    /*margin-top: -16rem;*/
+
+    @include responsive(tablet-kucuk) {
+        padding: 18rem 0;
+        text-align: center;
+    }
+
+    &__menu {
+
+        border-top: .1rem solid $beyaz-renk;
+        padding-top: 2rem;
+        display: inline-block;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include responsive(tablet-kucuk) {
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    &__list {
+        list-style: none;
+
+        @include responsive(tablet-kucuk) {
+            font-size: 4rem;
+        }
+
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            color: $beyaz-renk;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+
+            color: $beyaz-renk;
+            transform: rotate(5deg) scale(1.3);
+
+        }
+
+    }
+
+    &__copyright {
+        border-top: .1rem solid $beyaz-renk;
+        color:$beyaz-renk;
+        padding-top: 2rem;
+        width: 100%;
+
+        @include responsive(tablet-kucuk) {
+            width: 100%;
+            float: none;
+            text-align: center;
+            font-size: 2.7rem;
+        }
+    }
+
+    &__sosyal{
+        border-top: .1rem solid $beyaz-renk;
+        padding-top: 2rem;
+        width: 48%;
+        text-align: center;
+
+        @include responsive(tablet-kucuk) {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+    }
+
+    &__sosyallink {
+
+        &:link,
+        &:visited {
+            color: $beyaz-renk;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+
+            @include responsive(tablet-kucuk) {
+                font-size: 5rem;
+            }
+        }
+
+        &:hover,
+        &:active {
+            color: $beyaz-renk;
+            transform: translateY(-.3rem);
+
+        }
+    }
+} 
+
+// 404 Footer
+
+.footer-404 {
+    background-image: linear-gradient(to right bottom, $anarenk-acik-mavi, $anarenk-normal-mavi);
+    padding: 5rem 0 1rem;
+    font-size: 1.4rem;
+    color: $beyaz-renk;
+    margin-top: -10rem;
+
+    @include responsive(tablet-kucuk) {
+        padding: 18rem 0;
+        text-align: center;
+    }
+
+}
+
+///////////////
+.ozel {
+    margin-left: 6rem;
+
+   &-copyright {
+    margin-left: 16.2rem;
+    margin-top: -2rem;
+
+    @include responsive(telefon) {
+        margin-left: 1rem;
+    }
+    @include responsive(tablet-kucuk) {
+        margin-left: 1rem;
+    }
+   }
+
+    @include responsive(telefon) {
+        margin-left: 1rem;
+    }
+    @include responsive(tablet-kucuk) {
+        margin-left: 1rem;
+    }
+    
+}
+.iletisim-icon {
+    background-image: linear-gradient(to right, #fdfdfd, #e0dfdf);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 5.5rem;
+    transition: all .2s ease-in-out;
+
+    @include responsive(telefon) {
+        font-size: 13.5rem;
+    }
+
+    @include responsive(tablet-kucuk) {
+        font-size: 13.5rem;
+
+    }
+
+}
+.ozel-iletisim {
+    margin-left: 16rem;
+    margin-top: -3rem;
+
+    @include responsive(telefon) {
+        margin-left: 5rem;
+        margin-top: 1rem;
+        padding: .5rem 2rem .2rem 1.5rem;
+    }
+    @include responsive(tablet-kucuk) {
+        margin-left: 5rem;
+        margin-top: 1rem;
+        padding: .5rem 2rem .2rem 1.5rem;
+    }
+
+    &__yazi {
+        color:#e0e0e0;
+        font-weight: 600;
+        font-family: sans-serif;
+        font-size: 4.2rem;
+        /*margin-left: 6rem;*/
+        margin-top: -3.5rem;
+
+        @include responsive(tablet-kucuk) {
+            font-size: 5.2rem;
+            margin-left: 0rem;
+        }
+
+        @include responsive(telefon) {
+            font-size: 5.2rem;
+            margin-left: 0rem;
+        }
+    }
+}

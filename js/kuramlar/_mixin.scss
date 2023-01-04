@@ -1,0 +1,44 @@
+@mixin duzenleme {
+&::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+}
+
+@mixin absoluteortala {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+//medya sorgu yönetim
+/*
+0 - 600   : Telefon
+600 - 900 : Tablet
+900-1200  : Table büyük versiyon
+1000 ve üzeri: Büyük masaüstü
+1200 - 1800  : Normal stiller için
+*/
+
+@mixin responsive-telefon {
+    @media (max-width: 600px) { @content };
+    
+}
+
+@mixin responsive($bitisnoktasi) {
+    @if $bitisnoktasi == telefon {
+        @media only screen and (max-width: 40em) { @content };
+    }
+    @if $bitisnoktasi == tablet-kucuk {
+        @media only screen and (max-width: 56.25em) { @content };
+    }
+    @if $bitisnoktasi == tablet-buyuk {
+        @media only screen and (max-width: 75em) { @content };
+    }
+
+    @if $bitisnoktasi == buyuk-masaustu {
+        @media only screen and (min-width: 112.5em) { @content };
+    }
+}

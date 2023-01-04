@@ -1,0 +1,60 @@
+
+
+@import "kuramlar/mixin";
+@import "temel/araclar";
+@import "kuramlar/degiskenler";
+@import "temel/temel";
+@import "temel/cursor";
+@import "kuramlar/fonksiyonlar";
+@import "sayfalar/home-sections";
+
+@import "temel/animasyonlar";
+
+@import "temel/tipografi";
+@import "bilesenler/swiper";
+@import "layout/header";
+@import "layout/tablolar";
+@import "bilesenler/butonlar";
+@import "bilesenler/markalar";
+@import "bilesenler/galeri";
+@import "bilesenler/hizmetler";
+@import "bilesenler/yorumlar";
+@import "bilesenler/team";
+@import "layout/footer";
+@import "layout/menu";
+@import "bilesenler/projeler";
+@import "bilesenler/form";
+@import "bilesenler/social";
+@import "bilesenler/slider";
+@import "bilesenler/yukari-cik";
+
+
+
+@mixin transition-cubic{
+	transition-duration: 1s;	-webkit-transition-duration: 1s;	
+	transition-timing-function: cubic-bezier(0.86, 0, 0.09, 1);
+	-webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.09, 1)}
+
+@mixin transition{-webkit-transition: all .35s ease-in-out;
+	-moz-transition: all .35s ease-in-out; 
+	-ms-transition: all .35s ease-in-out; 
+	-o-transition: all .35s ease-in-out; 
+	transition: all .35s ease-in-out;}
+
+.preloader{width: 100%; height: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; position: fixed; z-index: 99; right: 0; top:0; background: #ffffff; @include transition-cubic;
+	figure{ width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; animation: fadeup 0.30s; position: relative;
+		&:after{content: ""; width: 100%; height: 100%; border: 1px solid transparent; border-top: 1px solid $anarenk-koyu-kirmizi; border-radius: 50%; position: absolute; left: 0; top: 0; animation: rotate1 0.60s infinite;}}
+	.l img{height: 50px; display: inline-block; ;}}
+.page-loaded .preloader{ top:0; transform:translateY(20px); opacity: 0; z-index: 0; visibility: hidden;}
+@keyframes fadeup {
+	0%{transform:translateY(20px); opacity: 0;}
+    100%{transform:translateY(0); opacity: 1;}
+}
+@keyframes rotate1 {
+	0%{transform:rotate(0deg); }
+    100%{transform:rotate(360deg); }
+}
+
+
+
+

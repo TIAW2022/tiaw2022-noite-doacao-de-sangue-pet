@@ -1,0 +1,418 @@
+.tablolar {
+    margin-top: 1rem;
+}
+.tablo {
+    max-width: 133rem;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+        margin-bottom:$tablo-yatay-bottom;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: $tablo-yatay-bottom-kucuk;
+            margin-top: -16rem;
+        }
+    }
+
+    @include responsive(tablet-kucuk) {
+        padding: 20rem 5rem;
+    }
+
+    @include duzenleme;
+    
+    [class^="tablo--"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $tablo-arasi-bosluk;
+
+            @include responsive(tablet-kucuk) {
+                margin-right: 0;
+                margin-bottom: $tablo-yatay-bottom-kucuk;
+            }
+        }
+
+        @include responsive(tablet-kucuk) {
+            width: 100% !important;
+        }
+    }
+
+    .tablo--1-ve-2 {
+        width: calc((100% - #{$tablo-arasi-bosluk}) / 2);
+
+    }
+
+    .tablo--1-ve-3 {
+        width: calc((100% - 2 * #{$tablo-arasi-bosluk}) / 3);
+       
+    }
+
+    .tablo--1-ve-4 {
+        width: calc((100% - 3 * #{$tablo-arasi-bosluk}) /4);
+    }
+
+    .tablo--2-ve-3 {
+        width: calc(2* ((100% - 2 * #{$tablo-arasi-bosluk}) /3) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--2-ve-4 {
+        width: calc(2* ((100% - 3 * #{$tablo-arasi-bosluk}) /4) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--3-ve-4 {
+        width: calc(3* ((100% - 3* #{$tablo-arasi-bosluk}) /4) + 2 * #{$tablo-arasi-bosluk});
+    }
+
+}
+
+
+// hakkımızda için
+
+
+.tablohakkimizda {
+    max-width: $tablo-genislik;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom:$tablo-yatay-bottom;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: -33rem;
+            margin-top: -16rem;
+        }
+    }
+
+    @include responsive(tablet-kucuk) {
+        padding: 20rem 5rem;
+    }
+
+    @include duzenleme;
+    
+    [class^="tablo--"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $tablo-arasi-bosluk;
+
+            @include responsive(tablet-kucuk) {
+                margin-right: 0;
+                margin-bottom: $tablo-yatay-bottom-kucuk;
+            }
+        }
+
+        @include responsive(tablet-kucuk) {
+            width: 100% !important;
+        }
+    }
+
+    .tablo--1-ve-2 {
+        width: calc((100% - #{$tablo-arasi-bosluk}) / 2);
+
+    }
+
+    .tablo--1-ve-3 {
+        width: calc((100% - 2 * #{$tablo-arasi-bosluk}) / 3);
+       
+    }
+
+    .tablo--1-ve-4 {
+        width: calc((100% - 3 * #{$tablo-arasi-bosluk}) /4);
+    }
+
+    .tablo--2-ve-3 {
+        width: calc(2* ((100% - 2 * #{$tablo-arasi-bosluk}) /3) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--2-ve-4 {
+        width: calc(2* ((100% - 3 * #{$tablo-arasi-bosluk}) /4) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--3-ve-4 {
+        width: calc(3* ((100% - 3* #{$tablo-arasi-bosluk}) /4) + 2 * #{$tablo-arasi-bosluk});
+    }
+
+}
+
+// hizmetler için
+
+
+.tablohizmetler{
+    max-width: 133rem;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 1180px) {
+        max-width: 133rem;
+    }
+
+    &:not(:last-child) {
+        margin-bottom:$tablo-yatay-bottom;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: -33rem;
+            margin-top: -16rem;
+        }
+    }
+
+    @include responsive(tablet-kucuk) {
+        padding: 20rem 5rem;
+    }
+
+    @include duzenleme;
+    
+    [class^="tablo--"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $tablo-arasi-bosluk;
+
+            @include responsive(tablet-kucuk) {
+                margin-right: 0;
+                margin-bottom: $tablo-yatay-bottom-kucuk;
+            }
+        }
+
+        @include responsive(tablet-kucuk) {
+            width: 100% !important;
+        }
+    }
+
+    .tablo--1-ve-2 {
+        width: calc((100% - #{$tablo-arasi-bosluk}) / 2);
+
+    }
+
+    .tablo--1-ve-3 {
+        width: calc((100% - 2 * #{$tablo-arasi-bosluk}) / 3);
+       
+    }
+
+    .tablo--1-ve-4 {
+        width: calc((100% - 3 * #{$tablo-arasi-bosluk}) /4);
+    }
+
+    .tablo--2-ve-3 {
+        width: calc(2* ((100% - 2 * #{$tablo-arasi-bosluk}) /3) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--2-ve-4 {
+        width: calc(2* ((100% - 3 * #{$tablo-arasi-bosluk}) /4) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--3-ve-4 {
+        width: calc(3* ((100% - 3* #{$tablo-arasi-bosluk}) /4) + 2 * #{$tablo-arasi-bosluk});
+    }
+
+}
+
+//hizmetler detay için
+
+// hakkımızda için
+
+
+.tablohizmetlerdetay {
+    max-width: $tablo-genislik;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom:$tablo-yatay-bottom;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: -33rem;
+            margin-top: -16rem;
+        }
+    }
+
+    @include responsive(tablet-kucuk) {
+        padding: 20rem 5rem;
+    }
+
+    @include duzenleme;
+    
+    [class^="tablo--"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $tablo-arasi-bosluk;
+
+            @include responsive(tablet-kucuk) {
+                margin-right: 0;
+                margin-bottom: $tablo-yatay-bottom-kucuk;
+            }
+        }
+
+        @include responsive(tablet-kucuk) {
+            width: 100% !important;
+        }
+    }
+
+    .tablo--1-ve-2 {
+        width: calc((100% - #{$tablo-arasi-bosluk}) / 2);
+
+    }
+
+    .tablo--1-ve-3 {
+        width: calc((100% - 2 * #{$tablo-arasi-bosluk}) / 3);
+       
+    }
+
+    .tablo--1-ve-4 {
+        width: calc((100% - 3 * #{$tablo-arasi-bosluk}) /4);
+    }
+
+    .tablo--2-ve-3 {
+        width: calc(2* ((100% - 2 * #{$tablo-arasi-bosluk}) /3) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--2-ve-4 {
+        width: calc(2* ((100% - 3 * #{$tablo-arasi-bosluk}) /4) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--3-ve-4 {
+        width: calc(3* ((100% - 3* #{$tablo-arasi-bosluk}) /4) + 2 * #{$tablo-arasi-bosluk});
+    }
+
+}
+
+
+// yorumlar alanı
+
+// hizmetler için
+
+
+.tabloyorumlar{
+    max-width: $tablo-genislik;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom:$tablo-yatay-bottom;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: -33rem;
+            margin-top: -16rem;
+        }
+    }
+
+    @include responsive(tablet-kucuk) {
+        padding: 20rem 5rem;
+    }
+
+    @include duzenleme;
+    
+    [class^="tablo--"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $tablo-arasi-bosluk;
+
+            @include responsive(tablet-kucuk) {
+                margin-right: 0;
+                margin-bottom: $tablo-yatay-bottom-kucuk;
+            }
+        }
+
+        @include responsive(tablet-kucuk) {
+            width: 100% !important;
+        }
+    }
+
+    .tablo--1-ve-2 {
+        width: calc((100% - #{$tablo-arasi-bosluk}) / 2);
+
+    }
+
+    .tablo--1-ve-3 {
+        width: calc((100% - 2 * #{$tablo-arasi-bosluk}) / 3);
+       
+    }
+
+    .tablo--1-ve-4 {
+        width: calc((100% - 3 * #{$tablo-arasi-bosluk}) /4);
+    }
+
+    .tablo--2-ve-3 {
+        width: calc(2* ((100% - 2 * #{$tablo-arasi-bosluk}) /3) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--2-ve-4 {
+        width: calc(2* ((100% - 3 * #{$tablo-arasi-bosluk}) /4) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--3-ve-4 {
+        width: calc(3* ((100% - 3* #{$tablo-arasi-bosluk}) /4) + 2 * #{$tablo-arasi-bosluk});
+    }
+
+}
+
+
+// footer
+
+.tablo-footer {
+    max-width: 133rem;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom:$tablo-yatay-bottom;
+
+        @include responsive(tablet-kucuk) {
+            margin-bottom: $tablo-yatay-bottom-kucuk;
+            margin-top: -16rem;
+        }
+    }
+
+    @include responsive(tablet-kucuk) {
+        padding: 20rem 5rem;
+    }
+
+    @include duzenleme;
+    
+    [class^="tablo--"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $tablo-arasi-bosluk;
+
+            @include responsive(tablet-kucuk) {
+                margin-right: 0;
+                margin-bottom: $tablo-yatay-bottom-kucuk;
+            }
+        }
+
+        @include responsive(tablet-kucuk) {
+            width: 100% !important;
+        }
+    }
+
+    .tablo--1-ve-2 {
+        width: calc((100% - #{$tablo-arasi-bosluk}) / 2);
+
+    }
+
+    .tablo--1-ve-3 {
+        width: calc((100% - 2 * #{$tablo-arasi-bosluk}) / 3);
+       
+    }
+
+    .tablo--1-ve-4 {
+        width: calc((100% - 3 * #{$tablo-arasi-bosluk}) /4);
+    }
+
+    .tablo--2-ve-3 {
+        width: calc(2* ((100% - 2 * #{$tablo-arasi-bosluk}) /3) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--2-ve-4 {
+        width: calc(2* ((100% - 3 * #{$tablo-arasi-bosluk}) /4) + #{$tablo-arasi-bosluk});
+    }
+
+    .tablo--3-ve-4 {
+        width: calc(3* ((100% - 3* #{$tablo-arasi-bosluk}) /4) + 2 * #{$tablo-arasi-bosluk});
+    }
+
+}

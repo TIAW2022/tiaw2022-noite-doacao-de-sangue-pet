@@ -1,0 +1,280 @@
+.header {
+    height: 11vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    position: fixed;
+    background: #ffffff;
+    z-index: 2;
+    /*position: relative;*/
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+           only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), 
+           only screen and (min-width: 125em) {
+    }
+
+    @include responsive(telefon) {
+        height: 11vh;
+    }
+    @media only screen and (max-width: 390px) {
+        height: 14vh;
+	}
+    &__logo-alani {
+        position: absolute;
+        top: 1rem;
+        left: 4rem;
+        z-index: 9;
+    }
+    
+    &__logo {
+        
+        /*height: 20px;*/
+    }
+
+}
+.header-slider {
+    height: 94vh;
+    background-size: cover;
+    background-position: top;
+    /*position: relative;*/
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+           only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), 
+           only screen and (min-width: 125em) {
+    }
+
+    @include responsive(telefon) {
+        /*height: 20vh;*/
+         /*margin-top: -300px;*/
+    }
+
+    @media only screen and (max-width: 1024px) {
+		height: 39vh;
+	}
+
+}
+//anasayfa slider için
+
+.header__slider-alani{
+    position: absolute;
+    top:40%;
+    left:42%;
+    transform: translate(-30%,-30%);
+    text-align: center;
+
+    @include responsive(telefon) {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    transform: translate(-30%, -30%);
+    text-align: center;
+    }
+}
+
+
+//header area ----------------------------------------------------------------------------------
+
+.header-area {
+    height: 36vh;
+    background-image: url(../img/pet-clinic-header.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    @media only screen and (max-width: 1024px) {
+        
+    }
+
+    @media only screen and (max-width: 812px) {
+    }
+    
+    
+
+    @include responsive(telefon) {
+        height: 28vh;
+    }
+
+    @include responsive(tablet-kucuk) {
+
+    }
+}
+
+
+
+.header-area-top{
+    position: absolute;
+    top:70%;
+    left:47%;
+    transform: translate(-30%,-30%);
+    text-align: center;
+
+    @include responsive(telefon) {
+        position: absolute;
+        top: 41%;
+        left: 40%;
+        transform: translate(-30%, -30%);
+        text-align: center;
+    }
+
+    @include responsive(tablet-kucuk) {
+        position: absolute;
+        top: 70%;
+        left: 45%;
+        transform: translate(-30%, -30%);
+        text-align: center;
+    }
+
+}
+
+.header-area-top-titles{
+color: $beyaz-renk;
+text-transform: uppercase;
+margin-bottom: 5rem;
+backface-visibility: hidden;
+
+@include responsive(tablet-kucuk) {
+    font-size: 8rem;
+}
+
+&--1{
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 1rem;
+    
+    animation-name: solahareket;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+    @include responsive(tablet-kucuk) {
+        font-size: 4rem;
+    }
+    @include responsive(tablet-kucuk) {
+        font-size: 4rem;
+    }
+
+    @include responsive(tablet-buyuk) {
+        font-size: 4rem;
+    }
+    }
+    
+&--2{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 0rem;
+    font-weight: 500;
+    
+    animation: sagahareket 1s ease-out;
+
+    @include responsive(tablet-kucuk) {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    }
+
+}
+
+
+//contact send area ----------------------------------------------------------------------------------
+
+.header-contact-area {
+    height: 60vh;
+    background-image: url(../img/pet-clinic-header.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    @media only screen and (max-width: 1024px) {
+        
+    }
+
+    @media only screen and (max-width: 812px) {
+    }
+    
+    
+
+    @include responsive(telefon) {
+        height: 69vh;
+    }
+
+    @include responsive(tablet-kucuk) {
+
+    }
+}
+
+
+
+.header-contact-area-top{
+    position: absolute;
+    top:60%;
+    left:45%;
+    transform: translate(-30%,-30%);
+    text-align: center;
+
+    @include responsive(telefon) {
+        position: absolute;
+        top: 41%;
+        left: 40%;
+        transform: translate(-30%, -30%);
+        text-align: center;
+    }
+
+    @include responsive(tablet-kucuk) {
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        transform: translate(-30%, -30%);
+        text-align: center;
+    }
+
+}
+
+.header-contact-area-top-titles{
+color: $beyaz-renk;
+text-transform: uppercase;
+margin-bottom: 5rem;
+backface-visibility: hidden;
+
+@include responsive(tablet-kucuk) {
+    font-size: 5rem;
+}
+
+&--1{
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 1rem;
+    
+    animation-name: solahareket;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+    @include responsive(tablet-kucuk) {
+        font-size: 4rem;
+    }
+    @include responsive(tablet-kucuk) {
+        font-size: 4rem;
+    }
+
+    @include responsive(tablet-buyuk) {
+        font-size: 4rem;
+    }
+    }
+    
+&--2{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 0rem;
+    font-weight: 500;
+    
+    animation: sagahareket 1s ease-out;
+
+    @include responsive(tablet-kucuk) {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    }
+
+}
